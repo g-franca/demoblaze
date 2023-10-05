@@ -10,17 +10,12 @@ describe('template spec', () => {
 
   //Agregar varias categorías:
 
-  it('Test001 - Should add new Category in the Category List', () => {
-    //need to be more specific as the client logged in or out is not able to add a category.
-    //We can discuss if it was a backend testing.
-  });
-
-  it('Test002 - Should verify that Category List is correctly visible on the main page', () => {
+  it('Test001 - Should verify that Category List is correctly visible on the main page', () => {
     homePage.verifyCategoryList();
   });
 
   //Agregar un Ítem de Cada Categoría:
-  it('Test003 - Add one item from each category to chart', () => {
+  it('Test002 - Add one item from each category to chart', () => {
     let ProductList = ['Samsung galaxy s6','Sony vaio','Apple monitor 24']
     homePage.AddItemsFromHomePagetoChart(ProductList[0]);
     homePage.AddItemsFromHomePagetoChart(ProductList[1]);
@@ -31,7 +26,7 @@ describe('template spec', () => {
   });
 
   //Carrito de Compras - Actualización Correcta:
-  it('Test004 - Verify that the cart is updated correctly with the addition of a product.', () => {
+  it('Test003 - Verify that the cart is updated correctly with the addition of a product.', () => {
     const product1 = 'ASUS Full HD';
     const product2 = 'Samsung galaxy s6';
     homePage.accessMonitorsPage();
