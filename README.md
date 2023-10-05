@@ -65,10 +65,101 @@ Aclaraciones:
 3. He dejado algunos pequeños comentarios en el codigo que NO son considerados buena practica, pero he trabajado en varios proyectos y todo es muy sujeto a distintas interpretaciones es bueno aclarar con el equipo en un proyecto real.
 4. No esta del todo claro el primer item de Test de Categorias ya que el enfoque es automatizacion sobre UI. Me gustaria tener la posibilidad de discutirlo. A su vez que se valoren los demas test cases.
 
-Test002 - Should verify that Category List is correctly visible on the main page
+1. Agregar varias categorías:
+-Test001 - Should verify that Category List is correctly visible on the main page.
+
+	Business Case: Crear una prueba que verifique la capacidad de agregar diferentes categorías de productos.
+
+	Steps to reproduce:
+	- Ingresar a la pagina de inicio/ home.
+ 	- Analizar la lista de Categorias.
+
+ 	Expected Result:
+	- Verificar que las categorías pre-establecidas se muestren correctamente en la página.
+
+ 	Attached images for support
 
 
 
+2. Agregar un Ítem de Cada Categoría:
+-Test002 - Add one item from each category to chart
+
+	Business Case: Automatizar el proceso de agregar un ítem de cada categoría al carrito de compras.
+
+	Steps to reproduce:
+	- Ingresar a la pagina de inicio/ home.
+ 	- Seleccionar un producto de la pagina de inicio.
+  	- Agregarlo al carrito y regresar a la pagina de inicio.
+   	- Agregar un segundo producto al carrito de compras.
+   	- Ir a la pagina de monitores desde la seccion de "Categorias".
+   	- Agregar un monitor al carrito de compras.
+   	- Ingresar a la seccion del carrito de compras.
+
+ 	Expected Result:
+	- Verificar de que el carrito muestre los ítems correctamente y en la cantidad esperada.
+
+ 	Attached images for support
+
+3. Carrito de Compras - Actualización Correcta::
+-Test003 - Verify that the cart is updated correctly with the addition of a product
+
+	Business Case: Crear una prueba que valide que el carrito de compras se actualiza correctamente al agregar ítems.
+
+	Steps to reproduce:
+	- Ingresar a la pagina de inicio/ home.
+ 	- Seleccionar un producto de la pagina de inicio.
+  	- Agregarlo al carrito y regresar a la pagina de inicio.
+   	- Agregar un segundo producto al carrito de compras.
+   	- Ingresar a la seccion del carrito de compras.
+
+ 	Expected Result:
+	- Verificar que los productos hayan sido ingresados correctamente. Sus cantidades y precios.
+ 	- Verificar que el total del carrito refleje con precisión los cambios realizados. 
+
+ 	Attached images for support
+
+
+-Test004 - Verify that the cart is updated correctly when a product is removed.
+
+	Business Case: Crear una prueba que valide que el carrito de compras se actualiza correctamente al eliminar ítems.
+
+	Steps to reproduce:
+	- Ingresar a la pagina de inicio/ home.
+ 	- Seleccionar un producto de la pagina de inicio.
+  	- Agregarlo al carrito y regresar a la pagina de inicio.
+   	- Agregar un segundo producto al carrito de compras.
+   	- Ingresar a la seccion del carrito de compras.
+    	- Eliminar un producto de la lista de compras.
+
+ 	Expected Result:
+	- Verificar que los productos hayan sido ingresados correctamente. Sus cantidades y precios.
+ 	-Verificar que el producto haya sido eliminado correctamente.
+ 	- Verificar que el total del carrito refleje con precisión los cambios realizados. 
+
+ 	Attached images for support
+
+4. Flujo de Checkout con Visualización de Número de Tarjeta:
+-Test005 - Should Proceed with purchase and verify credit card number
+
+	Business Case: Automatizar el flujo de checkout, incluida la visualización del número de tarjeta.
+
+	Steps to reproduce:
+	- Ingresar a la pagina de inicio/ home.
+ 	- Seleccionar un producto de la pagina de inicio.
+  	- Agregarlo al carrito y regresar a la pagina de inicio.
+   	- Agregar un segundo producto al carrito de compras.
+	- Ingresar a la seccion del carrito de compras.
+ 	- Proceder con el checkout
+  	- Ingresar nombres, pais y datos de una tarjeta de credito
+   	- Confirmar la compra.   
+
+ 	Expected Result:
+	- Verificar que el número de tarjeta ingresado en el formulario coincida con el número mostrado en el popup de confirmación.
+ 	- Verificar que el nombre ingresado en el formulario coincida con el nombre mostrado en el popup de confirmación. 
+	- Verificar que el pais ingresado en el formulario coincida con el pais mostrado en el popup de confirmación.
+
+ 	Attached images for support
+  
 
 Ante la duda, quedo a disposicion email: gpoliseri@gmail.com
 
