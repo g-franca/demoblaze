@@ -100,7 +100,7 @@ Aclaraciones:
 
  	Attached images for support
 
-3. Carrito de Compras - Actualización Correcta::
+3. Carrito de Compras - Actualización Correcta:
 -Test003 - Verify that the cart is updated correctly with the addition of a product
 
 	Business Case: Crear una prueba que valide que el carrito de compras se actualiza correctamente al agregar ítems.
@@ -118,7 +118,7 @@ Aclaraciones:
 
  	Attached images for support
 
-
+3. Carrito de Compras - Actualización Correcta:
 -Test004 - Verify that the cart is updated correctly when a product is removed.
 
 	Business Case: Crear una prueba que valide que el carrito de compras se actualiza correctamente al eliminar ítems.
